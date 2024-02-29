@@ -172,3 +172,31 @@ git push origin dev-test
 git checkout main
 git merge dev-test
 ```
+
+## Partie 5 : Ignorer un fichier avec un .gitignore
+### 1. Créer le fichier 
+```
+touch file.txt
+vim .gititngore
+```
+
+### 2. Ajouter la ligne suivante
+```
+file.txt
+```
+
+### 3. Ajouter et valider les modificatinons 
+```
+git add .gitignore
+git commit -m "Add file.txt to .gitignore"
+```
+
+### 4. Vérifier que le fichier est ignoré
+```
+git status
+```
+
+### 5. Pousser les modifications dans la branche main
+```
+git push origin main
+```
